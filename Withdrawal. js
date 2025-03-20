@@ -1,0 +1,10 @@
+function withdraw() {
+    if (coins >= 15000) {
+        alert("Withdrawal Successful!");
+        coins = 0;
+        localStorage.setItem("coins", coins);
+        document.getElementById("coins").innerText = coins;
+    } else {
+        alert("You need at least 15000 coins to withdraw.");
+    }
+}
